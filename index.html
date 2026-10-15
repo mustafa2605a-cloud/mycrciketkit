@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IRONCREASE — Stand Firm. Strike Hard.</title>
+<meta name="description" content="IronCrease: premium cricket equipment built for players who take performance seriously.">
+<link rel="icon" href="assets/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#shop">Skip to products</a>
+<header class="nav" id="nav">
+  <a class="logo" href="#home" aria-label="IronCrease home"><img src="assets/images/ironcrease-logo.jpg" alt="IronCrease" width="120" height="82"></a>
+  <nav id="menu" aria-label="Main">
+    <a href="#home">Home</a><a href="#shop" data-filter="all">Shop</a><a href="#shop" data-filter="bats">Cricket Bats</a><a href="#shop" data-filter="gear">Protective Gear</a><a href="#shop" data-filter="balls">Cricket Balls</a><a href="#story">About Us</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="tools">
+    <button class="icon" id="searchBtn" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+    <button class="icon" id="cartBtn" aria-label="Open cart"><svg viewBox="0 0 24 24"><path d="M3 4h2l2.5 11h10L20 7H6"/><circle cx="9" cy="20" r="1"/><circle cx="17" cy="20" r="1"/></svg><span class="count" id="cartCount">0</span></button>
+    <button class="icon burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <video class="bgvid" autoplay muted loop playsinline preload="metadata" poster="assets/images/hero-poster.jpg" aria-hidden="true"><source src="assets/videos/hero.mp4" type="video/mp4"></video>
+  <div class="glow"></div>
+  <div class="hero-copy">
+    <p class="mono rv">// ENGINEERED FOR PERFORMANCE</p>
+    <h1><span class="mask"><span>Built for the</span></span><span class="mask"><span>moments that</span></span><span class="mask"><span class="lime">matter.</span></span></h1>
+    <p class="lead rv">Precision-crafted cricket essentials for players who demand more from every shot, every delivery, and every match.</p>
+    <div class="cta rv"><a class="btn" href="#shop">Shop Equipment <i>→</i></a><a class="btn ghost" href="#categories">Explore the Collection <i>→</i></a></div>
+  </div>
+  <div class="hero-img tilt" data-depth="10"><img src="assets/images/hero.jpg" alt="Cricket kit: bat, gloves, helmet, pads and whites arranged on a stone step" width="800" height="1200" fetchpriority="high"><div class="orbit" aria-hidden="true">
+    <div class="fl f1"><img src="assets/images/bat.jpg" alt="" class="contain"></div>
+    <div class="fl f2"><img src="assets/images/gloves.jpg" alt=""></div>
+    <div class="fl f3"><img src="assets/images/pads.jpg" alt=""></div>
+    <div class="fl f4"><img src="assets/images/ball.jpg" alt=""></div>
+  </div>
+  <span class="tag mono">PRO KIT / 01</span></div>
+  <a class="scroll mono" href="#categories">SCROLL<span></span></a>
+</section>
+
+<section class="sec" id="categories">
+  <div class="head rv"><p class="mono">// COLLECTIONS</p><h2>Gear up by discipline.</h2></div>
+  <div class="cats">
+    <a class="cat c-a rv tilt" href="#shop" data-filter="bats"><img loading="lazy" src="assets/images/bat.jpg" alt="Cricket bat with green grip" class="contain"><div><h3>Cricket Bats</h3><p>Balance and pickup for every stroke.</p><span>Explore Collection →</span></div></a>
+    <a class="cat c-b rv tilt" href="#shop" data-filter="gloves"><img loading="lazy" src="assets/images/gloves.jpg" alt="Pair of batting gloves"><div><h3>Batting Gloves</h3><p>Grip and protection.</p><span>Explore Collection →</span></div></a>
+    <a class="cat c-c rv tilt" href="#shop" data-filter="pads"><img loading="lazy" src="assets/images/pads.jpg" alt="Batting leg guards, front and back"><div><h3>Leg Guards &amp; Pads</h3><p>Stand your ground.</p><span>Explore Collection →</span></div></a>
+    <a class="cat c-d rv tilt" href="#shop" data-filter="balls"><img loading="lazy" src="assets/images/ball.jpg" alt="White cricket ball"><div><h3>Cricket Balls</h3><p>Seam, shape, consistency.</p><span>Explore Collection →</span></div></a>
+    <a class="cat c-e rv tilt" href="#shop" data-filter="wk"><img loading="lazy" src="assets/images/wk.jpg" alt="Wicketkeeping gloves"><div><h3>Wicketkeeping</h3><p>Safe hands behind the stumps.</p><span>Explore Collection →</span></div></a>
+    <a class="cat c-f rv tilt" href="#shop" data-filter="acc"><img loading="lazy" src="assets/images/accessories.jpg" alt="Helmet, cap, thigh guard and gloves"><div><h3>Accessories</h3><p>The details that complete a kit.</p><span>Explore Collection →</span></div></a>
+  </div>
+</section>
+
+<section class="sec alt" id="shop">
+  <div class="head rv"><p class="mono">// FEATURED PRODUCTS</p><h2>The IronCrease range.</h2><p class="note">Demonstration products, prices and ratings — sample data, not live inventory.</p></div>
+  <div class="filters" role="group" aria-label="Filter products">
+    <button data-filter="all" class="on">All</button><button data-filter="bats">Bats</button><button data-filter="gloves">Gloves</button><button data-filter="pads">Pads</button><button data-filter="balls">Balls</button><button data-filter="wk">Wicketkeeping</button><button data-filter="acc">Accessories</button>
+  </div>
+  <div class="grid" id="grid" aria-live="polite"></div>
+</section>
+
+<section class="story" id="story">
+  <img loading="lazy" src="assets/images/story.jpg" alt="" aria-hidden="true" data-parallax>
+  <div class="story-in rv"><p class="mono">// THE IRONCREASE IDENTITY</p><h2>Strength in every detail.</h2><span class="line"></span><p class="lead">Built around precision, discipline, and the pursuit of better performance, IronCrease represents the mindset of players who show up prepared, stand their ground, and compete with purpose.</p></div>
+</section>
+
+<section class="sec" id="craft">
+  <div class="head rv"><p class="mono">// WHAT TO LOOK FOR</p><h2>Performance, defined.</h2></div>
+  <div class="feat">
+    <article class="rv"><b class="mono">01</b><h3>Precision &amp; Control</h3><p>Balanced pickup and a confident feel through the shot.</p></article>
+    <article class="rv"><b class="mono">02</b><h3>Comfort &amp; Fit</h3><p>Gear that sits right, so you can focus on the game.</p></article>
+    <article class="rv"><b class="mono">03</b><h3>Protection &amp; Confidence</h3><p>Cover where it counts, for the moments you face the quick ones.</p></article>
+    <article class="rv"><b class="mono">04</b><h3>Durability &amp; Performance</h3><p>Equipment that keeps up across a long season.</p></article>
+  </div>
+</section>
+
+<section class="show">
+  <div class="show-txt rv"><p class="mono">// COLLECTION</p><h2>Your next innings starts here.</h2><p class="lead">The full kit, ready for the middle. Bat, gloves, bag and footwear — one complete setup.</p><a class="btn" href="#shop" data-filter="all">Shop the Collection <i>→</i></a></div>
+  <div class="show-img tilt" data-depth="8"><img loading="lazy" src="assets/images/showcase.jpg" alt="Cricket bat, batting gloves, kit bag and shoes laid out together" width="800" height="1066"></div>
+</section>
+
+<section class="promo rv"><h2>Gear up. Show up.</h2><p>Discover equipment designed around the way you play.</p><a class="btn" href="#shop" data-filter="all">Explore the Range <i>→</i></a><small>Sample promotion — edit in index.html.</small></section>
+
+<section class="sec" id="reviews">
+  <div class="head rv"><p class="mono">// CUSTOMER FEEDBACK</p><h2>On the field.</h2><p class="note">Placeholder reviews and ratings for demonstration — replace with real customer feedback.</p></div>
+  <div class="slider">
+    <blockquote class="rv"><p>“Sample review text: comfortable fit and a confident feel at the crease.”</p><footer>Sample Customer A · Gloves<br><span class="stars">★★★★★</span> <small>(sample)</small></footer></blockquote>
+    <blockquote class="rv"><p>“Sample review text: well-balanced and easy to pick up.”</p><footer>Sample Customer B · Bat<br><span class="stars">★★★★☆</span> <small>(sample)</small></footer></blockquote>
+    <blockquote class="rv"><p>“Sample review text: reassuring cover during a long innings.”</p><footer>Sample Customer C · Leg Guards<br><span class="stars">★★★★★</span> <small>(sample)</small></footer></blockquote>
+  </div>
+</section>
+
+<section class="sec news" id="newsletter">
+  <div class="head rv"><h2>Stay in the game.</h2><p class="lead">Get product updates, collection announcements, and cricket equipment news.</p></div>
+  <form id="newsForm" novalidate class="rv"><label class="sr" for="email">Email address</label><input id="email" type="email" placeholder="Email address" autocomplete="email"><button class="btn" type="submit">Subscribe</button><p id="newsMsg" role="status"></p></form>
+</section>
+</main>
+
+<footer id="contact">
+  <div class="f-grid">
+    <div><img src="assets/images/ironcrease-logo.jpg" alt="IronCrease" width="150" height="102" loading="lazy" class="flogo"><p class="mono">STAND FIRM. STRIKE HARD.</p><p>Performance-focused cricket equipment for players who take the game seriously.</p></div>
+    <div><h4>Shop</h4><a href="#shop" data-filter="bats">Cricket Bats</a><a href="#shop" data-filter="gear">Protective Gear</a><a href="#shop" data-filter="balls">Cricket Balls</a><a href="#shop" data-filter="acc">Accessories</a></div>
+    <div><h4>Support</h4><a href="#contact">Contact (add details)</a><a href="#contact">Shipping (placeholder)</a><a href="#contact">Returns (placeholder)</a></div>
+    <div><h4>Company</h4><a href="#story">About Us</a><a href="#newsletter">Newsletter</a><div class="social"><a href="#" aria-label="Instagram (placeholder link)">IG</a><a href="#" aria-label="Facebook (placeholder link)">FB</a><a href="#" aria-label="YouTube (placeholder link)">YT</a></div></div>
+  </div>
+  <div class="f-bot"><span>© 2026 IronCrease. All rights reserved.</span><span><a href="#contact">Privacy Policy (placeholder)</a> · <a href="#contact">Terms (placeholder)</a></span></div>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Shopping cart" aria-hidden="true">
+  <div class="d-head"><h3>Your Cart</h3><button class="icon" id="cartClose" aria-label="Close cart">✕</button></div>
+  <div class="d-body" id="cartItems"></div>
+  <div class="d-foot"><div class="sub"><span>Subtotal</span><b id="subtotal">PKR 0</b></div><button class="btn" id="checkout">Checkout</button><p class="note" id="checkMsg"></p></div>
+</aside>
+<dialog id="qv" aria-label="Product details"></dialog>
+<dialog id="sd" aria-label="Search"><form method="dialog" class="sform"><input id="q" type="search" placeholder="Search bats, gloves, pads…" aria-label="Search products"><button class="icon" aria-label="Close search">✕</button></form><div id="results"></div></dialog>
+<div class="toast" id="toast" role="status"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
